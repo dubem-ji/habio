@@ -1,4 +1,37 @@
+/* #Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* #Root Variables */
+:root {
+    --color-success: #42ba96;
+    --color-danger: #DC3545;
+    --color-info: #f3e36f;
+    
+    --color-primary: #111C0E;
+    --color-primary-alt1: #1A2902;
+    --color-primary-alt2: #344C12;
+    --color-secondary: #778D45;
+    --color-secondary-alt1: #AEC670;
+    --color-secondary-alt2: #c9d3be;
+
+    --card-border-radius: 2rem;
+
+    --borer-radius-1: 0.4rem;
+    --borer-radius-2: 0.8rem;
+    --borer-radius-3: 1.2rem;
+    --borer-radius-4: 2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --padding-2: 1.5rem;
+    --padding-3: 2rem;
+    --padding-4: 3rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+    --primary-font: 'Montserrat', 'sans-serif';
+    --secondary-font: 'Montserrat Alternates', 'sans-serif';
+}
 
 * {
     box-sizing: border-box;
@@ -10,10 +43,11 @@ html::-webkit-scrollbar {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f2f4f8;
+    background-color: var(--color-secondary-alt2);
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    color: #1A2902;
+    color: var(--color-primary-alt2);
 }
 
 a {
@@ -22,35 +56,32 @@ a {
     color: #000000;
 }
 
-h1{
-    /* font-family: 'Montserrat Alternates', sans-serif; */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
 }
 
-.landingContainer{
-    height: 100vh;
-    position: relative;
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.landingImage img{
-    height: 100vh;
+.brand h2{
+    margin: 0;
+    font-family: var(--secondary-font);
+    
+}
+
+.habioLogo img{
+    height: 1.5rem;
     width: auto;
 }
-.landingTextBox{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 70%;
-    background: #d7e9c4;
-    padding: 1rem 2rem;
-    /* padding-top: 0; */
+
+.linkItems{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-
-#brand{
-    font-size: 4rem;
-    font-weight: 500;
-    margin: 0px;
-
+.linkItems{
+    list-style-type: none;
 }
